@@ -23,15 +23,16 @@ d3.json("data.json").then(function (data){
 
         })
 
+
         .on('click',function(d){
 
 
-                text = d3.select('#workspace').append('div').classed('doclist', true)
+                text = d3.select('#workspace').append('div').classed('doclist', true);
 
-                text.append('h4').html(d).classed('doc_heading', true)
+
 
                 text.append('div').classed('text', true).append('p').html(function () {
-                    return data[d];
+                    return [d , data[d]];
                 })
 
 
@@ -50,5 +51,5 @@ d3.json("data.json").then(function (data){
 
 })
 $(function(){
-    $('#list').sortable();
+    $('#workspace').sortable();
 })
