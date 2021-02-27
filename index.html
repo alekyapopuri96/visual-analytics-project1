@@ -24,14 +24,14 @@
         background-color:#dcd8d7;
         padding: 10px;
         }
-        .col-4{
-        border-color: black;
+        .col-3{
+        border:  2px solid black;
         }
 
         .docx_list documents{
             border-style: solid;
         }
-        #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #sortable { list-style-type: none; margin: 20px; padding: 0; width: 60%; }
 
 
     </style>
@@ -42,33 +42,25 @@
 
 </head>
 <body>
+<!--project details-->
 <div id="details">
     <h2 align="center"> CIS569 Project</h2>
     <h3 align="right">Group:</h3>
     <p align="right">Alekya Popuri</p>
 </div>
+<!--dividing the screen in to row and 2 columns one for each ID's and text for the documents-->
 <div class="row">
-    <div class="col-4">
-
-
-
-            <h3>Document ID</h3>
-            <ul id="sortable" >
+    <div class="col-3">
+            <h3 align="center">Document ID</h3>
+            <ul id="sortable" align="center" >
 
                 </ul>
-
+    </div>
+    <div class="col-9" id="workspace">
+        <h3 align="center">Workspace</h3>
 
     </div>
-    <div class="col-8" id="workspace">
-        <h3>Workspace</h3>
-
-    </div>
-
-</div>
-
 
 </div>
 </body>
-
-
 </html>
